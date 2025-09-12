@@ -1,0 +1,103 @@
+ :root {
+     --menu-color: rgb(105, 99, 254);
+     --color-titre: rgb(189, 195, 199);
+     --color-titre1: rgb(61, 62, 63);
+     --color-text: rgb(236, 240, 241);
+     --white-color: rgb(255, 255, 255);
+     --box-bg: rgb(135, 131, 255);
+     --border-color: rgb(135, 131, 255);
+ }
+
+ *,
+ *::before,
+ *::after {
+
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     height: 100vh;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     justify-content: center;
+     padding: 20px;
+ }
+
+ main {
+     height: 90vh;
+     border: 1px solid var(--menu-color);
+     border-radius: 5px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .icone {
+     width: 80%;
+     height: 55%;
+     rotate:x 20deg;
+ }
+
+ .main-top svg {
+        width: 278px;
+    height: 201px;
+ }
+
+ .icone path {
+     stroke-dasharray: 1000px;
+     stroke-dashoffset: 1000px;
+     stroke: var(--menu-color);
+     stroke-width: 2;
+     fill: var(--box-bg);
+     /*todo couleur de remplissage finale */
+     fill-opacity: 0;
+     /*todo invisible au départ */
+     animation:
+         draw 10s ease forwards infinite,
+         /*todo ton animation de départ */
+         fillIn 2s ease forwards 1s;
+     /*todo remplissage après 4s */
+ }
+
+ .button {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+
+     a {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         background-color: var(--menu-color);
+         text-decoration: none;
+         color: white;
+         font-size: 1.3em;
+         font-weight: 600;
+         width: 130px;
+         height: 130px;
+         border-radius: 75px;
+     }
+ }
+
+ /* Effet dessin */
+ @keyframes draw {
+     to {
+         stroke-dashoffset: 0;
+     }
+ }
+
+ /* Apparition progressive du remplissage */
+ @keyframes fillIn {
+     from {
+         fill-opacity: 0;
+     }
+
+     to {
+         fill-opacity: 1;
+     }
+ }

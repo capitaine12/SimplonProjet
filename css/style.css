@@ -1,11 +1,11 @@
 :root {
-    --menu-color: #6963fe;
-    --color-titre: #bdc3c7;
-    --color-titre1: #3d3e3f;
-    --color-text: #ecf0f1;
-    --white-color: white;
-    --red-color: red;
-    --green-color: green;
+    --menu-color: rgb(105, 99, 254);
+    --color-titre: rgb(189, 195, 199);
+    --color-titre1: rgb(61, 62, 63);
+    --color-text: rgb(236, 240, 241);
+    --white-color: rgb(255, 255, 255);
+    --box-bg: rgb(135, 131, 255);
+    --border-color: rgb(135, 131, 255);
 }
 
 *,
@@ -180,8 +180,9 @@ body {
         display: flex;
         justify-content: center;
         box-shadow: inset 0px 1px 5px -3px;
-        background: whitesmoke;
+        background: var(--box-bg);
         border-radius: 8px;
+        border-top: 12px solid var(--border-color);
 
         img {
             height: 300px;
@@ -198,28 +199,6 @@ body {
         line-height: 1.4;
     }
 
-    .border-blem {
-        border-top: 14px solid red;
-
-    }
-
-    .border-solution {
-
-        border-top: 14px solid rgb(4, 184, 160);
-
-    }
-
-    .border-cible {
-
-        border-top: 14px solid rgb(255, 102, 0);
-
-    }
-
-    .border-impact {
-
-        border-top: 14px solid rgb(153, 0, 255);
-
-    }
 
     .border-left {
         border-left: 15px solid #8783ff;
@@ -235,42 +214,6 @@ body {
     flex-direction: column-reverse;
 }
 
-
-/* * :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-/* * :::::::::::::::::::::::::::::::::::: CONTACT :::::::::::::::::::::::::::: */
-/* * :::::::::::::::::::::::::::::::::::: CONTACT :::::::::::::::::::::::::::: */
-/* * :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-.sec-contact {
-
-    display: flex;
-    flex-direction: column;
-
-    .c-left,
-    .c-right {
-
-        height: 25vh;
-
-    }
-
-    .c-left {
-        background: center 30px /380px no-repeat url("/images/undraw_contact-us_kcoa.svg"), left -20px /250px no-repeat url("/images/donut_3d_shape.png");
-    }
-
-    .c-right {
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-
-        input {
-            width: 60%;
-            padding: 15px;
-        }
-
-    }
-}
 
 /* TODO :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 /* TODO ::::::::::::::::::::::::::::::::::::FOOTER:::::::::::::::::::::::::::: */
@@ -366,12 +309,12 @@ footer {
     }
 
     .sec-article {
-        margin: 25px 0px;
         display: flex;
         padding: 10px;
         gap: 25px;
         flex-direction: column;
         width: 60%;
+        margin: 70px 0;
     }
 
 
