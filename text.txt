@@ -1,85 +1,66 @@
+body {
+    height: 95vh;
+    display: flex
+;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    /* width: 0; */
+    background: aqua;
+}
 
 main {
+    height: 84vh;
+    border: 1px solid var(--menu-color);
+    border-radius: 5px;
+    display: grid
+;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 78%;
+    grid-template-rows: 1fr 0fr;
+    background: bisque;
+}
+
+.main-container {
+    /* display: flex
+; */
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image  {
+    width: 151px;
+    height: 145px;
+}
+
+.icone {
+    /* width: 122%; */
+    /* height: 78%; */
+}
+
+.button {
     display: flex
 ;
     flex-direction: column;
     justify-content: center;
-    max-width: 100%;
-    /* background: aqua; */
     align-items: center;
 }
 
-.sec-article {
-    margin: 25px 0px;
-    display: flex
-;
-    padding: 10px;
-    gap: 25px;
-    flex-direction: column;
-    /* align-items: center; */
-    width: 60%;
-    /* background: antiquewhite;
-}
-  
-.top-sec {
-    display: flex
-;
-    flex-direction: row;
-    /* align-items: center; */
-    gap: 8px;
-    color: var(--color-titre1);
-    justify-content: start;
-
-    svg {
-        height: 68px;
-        width: 86px;
-    }
- 
-  .titre {
-        font-family: walsheim-bold, tt-norms-pro-bold, "sans-serif";
-        font-size: 4em;
-    }
-}
-
-.sec-body {
-    display: flex
-;
-    justify-content: end;
-    flex-direction: row;
-    /* align-items: center; */
-    gap: 12px;
-    border-left: 14px solid red;
-    background: chocolate;
-    padding: 10px;
-}
-
-.sec-body {
-    .border-blem {
-        /* border-top: 14px solid red; */
-    }
-
-    .left-box {
+    a {
         display: flex
 ;
+        align-items: center;
         justify-content: center;
-        /* box-shadow: inset 0px 1px 5px -3px; */
-        /* background: whitesmoke; */
-        /* border-radius: 8px; */
-        /* height: 50px; */
+        background-color: var(--menu-color);
+        text-decoration: none;
+        color: white;
+        font-size: 1em;
+        font-weight: 600;
+        width: 100px;
+        height: 100px;
+        border-radius: 75px;
     }
-.left-box {
-        img {
-            height: 356px;
-            width: 343px;
-            /* width: max-content; */
-        }
-    }
-  
-    article {
-        text-align: justify;
-        padding: 4px;
-        font-size: 1.25em;
-        line-height: 1.4;
-        width: 50%;
-    }
-}
