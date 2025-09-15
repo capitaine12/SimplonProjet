@@ -228,7 +228,17 @@ body {
             padding: 20px;
             font-size: 1.25em;
             line-height: 1.2;
-    
+
+            ul, ol {
+
+                padding: 15px;
+            }
+
+            ul {
+                
+                list-style-type: disclosure-closed;
+            }
+
         }
 
 
@@ -248,8 +258,8 @@ body {
 
 
 /* TODO :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-/* TODO ::::::::::::::::::::::::::::::::::::FOOTER:::::::::::::::::::::::::::: */
-/* TODO ::::::::::::::::::::::::::::::::::::FOOTER:::::::::::::::::::::::::::: */
+/* TODO :::::::::::::::::::::::::::::::::::: FOOTER :::::::::::::::::::::::::::: */
+/* TODO :::::::::::::::::::::::::::::::::::: FOOTER :::::::::::::::::::::::::::: */
 /* TODO :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
 footer {
@@ -293,7 +303,19 @@ background-blend-mode: overlay, overlay, overlay, darken, normal;
         justify-content: space-between;
         gap: 15px;
         padding: 10px;
+
     }
+
+    .footer-bottom {
+        padding: 10px;
+        border-top: 2px solid;
+        text-align: center;
+    }
+}
+
+.link ul li ,
+.coordonner ul li {
+    color: #000000;
 
 }
 
