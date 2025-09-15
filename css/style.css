@@ -104,19 +104,30 @@ body {
 
 }
 
-.item svg {
+.small-item {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.small-item svg {
 
     height: 30px;
     width: 30px;
+}
+
+.small-item:hover{
+
+     background-color: var(--white-color);
+    color: var(--menu-color);
 }
 
 .item:hover {
 
     text-decoration: underline 5px;
     background-color: var(--white-color);
-    color: blue;
+    color: var(--menu-color);
 }
-
 
 .banner {
 
@@ -140,8 +151,17 @@ body {
     grid-template-rows: 0fr 1fr 0fr;
     padding: 10px;
     gap: 25px;
+    max-width: 100%;
 
 }
+
+ .main-sec {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
 
 .top-sec {
 
@@ -161,6 +181,7 @@ body {
     .titre {
 
         font-family: walsheim-bold, tt-norms-pro-bold, "sans-serif";
+        text-transform: uppercase;
     }
 
 
@@ -168,10 +189,15 @@ body {
 
 
 .sec-body {
-
     display: flex;
     justify-content: center;
     flex-direction: column;
+    gap: 12px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        border-radius: 10px;
+        overflow: hidden;
+    background: rgb(255, 255, 255);
+
     gap: 12px;
 
 
@@ -193,11 +219,12 @@ body {
     }
 
     article {
-        text-align: justify;
-        padding: 4px;
-        font-size: 1.25em;
-        line-height: 1.4;
-    }
+            text-align: left;
+            padding: 20px;
+            font-size: 1.25em;
+            line-height: 1.2;
+    
+        }
 
 
     .border-left {
@@ -222,7 +249,13 @@ body {
 
 footer {
 
-    background-color: black;
+background-image: linear-gradient(123deg, #FFFFFF 0%, #00B2FF 100%), 
+linear-gradient(236deg, #BAFF99 0%, #005E64 100%), 
+linear-gradient(180deg, #FFFFFF 0%, #002A5A 100%), 
+linear-gradient(225deg, #0094FF 20%, #BFF4ED 45%, #280F34 45%, #280F34 70%, #FF004E 70%, #E41655 85%, #B30753 85%, #B30753 100%), 
+linear-gradient(135deg, #0E0220 15%, #0E0220 35%, #E40475 35%, #E40475 60%, #48E0E4 60%, #48E0E4 68%, #011a16 68%, #000000 100%);
+background-blend-mode: overlay, overlay, overlay, darken, normal;
+
     color: white;
     padding: 10px;
 
@@ -300,21 +333,15 @@ footer {
         display: none;
     }
 
-    .main-sec {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        max-width: 100%;
-        align-items: center;
-    }
 
     .sec-article {
         display: flex;
         padding: 10px;
         gap: 25px;
         flex-direction: column;
-        width: 60%;
         margin: 70px 0;
+         max-width: 100%;
+        width: 66%;
     }
 
 
@@ -341,11 +368,8 @@ footer {
     .sec-body {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 12px;
-        background: rgb(255, 255, 255);
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-        border-radius: 10px;
-        overflow: hidden;
+       
+        
 
   
         .left-box {
@@ -360,22 +384,9 @@ footer {
             }
         }
 
-        article {
-            text-align: left;
-            padding: 20px;
-            font-size: 1.25em;
-            line-height: 1.2;
-    
-        }
+        
 
-    .border-blem ,
-    .border-solution,
-    .border-cible,
-    .border-impact {
 
-        border-top: none;
-
-    }
     }  
     
     .border-left {
@@ -390,3 +401,5 @@ footer {
 
 
 }
+
+
