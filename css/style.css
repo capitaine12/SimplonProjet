@@ -1,8 +1,6 @@
 :root {
     --menu-color: rgb(105, 99, 254);
-    --color-titre: rgb(189, 195, 199);
-    --color-titre1: rgb(61, 62, 63);
-    --color-text: rgb(236, 240, 241);
+    --color-titre1: rgb(44, 62, 80);
     --white-color: rgb(255, 255, 255);
     --box-bg: rgb(135, 131, 255);
     --border-color: rgb(135, 131, 255);
@@ -71,6 +69,11 @@ body {
 
 }
 
+.item, .small-item {
+  transition: all 0.3s ease-in-out;
+}
+
+
 .small-header {
 
     display: flex;
@@ -78,7 +81,6 @@ body {
     align-items: center;
     justify-content: space-between;
     
-
 }
 
 .large-header h2,
@@ -186,8 +188,9 @@ body {
 
     .titre {
 
-        font-family: walsheim-bold, tt-norms-pro-bold, "sans-serif";
+        font-family: "sans-serif";
         text-transform: uppercase;
+        
     }
 
 
@@ -300,9 +303,9 @@ background-blend-mode: overlay, overlay, overlay, darken, normal;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         gap: 15px;
-        padding: 10px;
+        padding: 20px;
 
     }
 
@@ -313,9 +316,11 @@ background-blend-mode: overlay, overlay, overlay, darken, normal;
     }
 }
 
-.link ul li ,
-.coordonner ul li {
-    color: #000000;
+
+.coordonner ul {
+    font-size: 16px;
+    font-weight: 500;
+    list-style: none;
 
 }
 
@@ -411,9 +416,6 @@ background-blend-mode: overlay, overlay, overlay, darken, normal;
                 
             }
         }
-
-        
-
 
     }  
     
